@@ -4,9 +4,20 @@ import { uploadResume } from "../api/api"
 export default function ResumeUploader({ setResult }) {
 
   const [file, setFile] = useState(null)
+  const [preview, setPreview] = useState(null)
 
   const handleFileChange = (e) => {
-    setFile(e.target.files[0])
+
+    const selected = e.target.files[0]
+  
+    if(!selected) return
+  
+    setFile(selected)
+  
+    const fileURL = URL.createObjectURL(selected)
+  
+    setPreview(fileURL)
+  
   }
 
   const handleUpload = async () => {
@@ -43,6 +54,32 @@ export default function ResumeUploader({ setResult }) {
       <h3>Upload Resume</h3>
 
       <input type="file" onChange={handleFileChange} />
+      {preview && (
+
+  <div className="resumePreview">
+
+    {file.type === "application/pdf" ? (
+
+    <iframe
+    src={`${preview}#toolbar=0`}
+    title="Resume Preview"
+    className="pdfPreview"
+    />
+
+    ) : (
+
+      <img
+        src={preview}
+        alt="Resume Preview"
+      />
+
+    )}
+
+    <p>{file.name}</p>
+
+  </div>
+
+)}
 
       <br /><br />
 

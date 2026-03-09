@@ -15,6 +15,8 @@ export default function Dashboard(){
   const [role,setRole] = useState("")
   const [techStack,setTechStack] = useState([])
   const [result,setResult] = useState(null)
+  const [showAnalysis, setShowAnalysis] = useState(false)
+  const [savedTechStack, setSavedTechStack] = useState([])
 
   const sendJD = async () => {
 
@@ -22,12 +24,15 @@ export default function Dashboard(){
       alert("Select role and tech stack")
       return
     }
-
-    const res = await setJobDescription({
+  
+    await setJobDescription({
       role: role,
       tech_stack: techStack
     })
-
+  
+    setSavedTechStack([...techStack])
+    setShowAnalysis(true)
+  
     alert("Job Description Saved")
   }
 
@@ -39,29 +44,60 @@ export default function Dashboard(){
 
       <div className="dashboard">
 
-        <div className="leftPanel">
+      <div className="leftPanel">
 
-          <RoleSelector
-            role={role}
-            setRole={setRole}
-            techStack={techStack}
-            setTechStack={setTechStack}
-          />
+<div className="topGrid">
 
-          <TechStackManager
-            techStack={techStack}
-            setTechStack={setTechStack}
-          />
+  <div className="leftSection">
 
-          <button onClick={sendJD}>
-            Save Job Description
-          </button>
+    <RoleSelector
+      role={role}
+      setRole={setRole}
+      techStack={techStack}
+      setTechStack={setTechStack}
+    />
 
-          <ResumeUploader
-            setResult={setResult}
-          />
+    <TechStackManager
+      techStack={techStack}
+      setTechStack={setTechStack}
+    />
 
+    <button onClick={sendJD}>
+      Save Job Description
+    </button>
+    {showAnalysis && (
+  <div className="analysisSection">
+
+    <h4>
+      Analyzing Tech Stack ({savedTechStack.length})
+    </h4>
+
+    <div className="analysisTags">
+
+      {savedTechStack.map((tech) => (
+        <div key={tech} className="analysisTag">
+          {tech}
         </div>
+      ))}
+
+    </div>
+
+  </div>
+)}
+
+  </div>
+
+  <div className="rightSection">
+
+    <ResumeUploader
+      setResult={setResult}
+    />
+
+  </div>
+
+</div>
+
+</div>
 
         <div className="rightPanel">
 
