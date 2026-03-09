@@ -1,0 +1,58 @@
+
+===== SKILLS =====
+
+● Programming Languages: Python, Java,C++, Java-Script,SQL
+● Tools & Libraries: NumPy, Pandas, Scikit-learn, TensorFlow, Matplotlib, Seaborn, OpenCV
+● Computer Science Fundamentals: Data Structures, Algorithms, OOPS, Computer-networks
+● Web Development: HTML, CSS, Java-Script, Wordpress, React-native
+Soft Skills
+● Project ● Public ● Teamwork ● Time
+Management Relations Management
+Extracurricular Activities
+● Member of WebBytes Coding Club, collaborating on programming projects and participating in code challenges to enhance technical
+● Active participant in CyberZee Cybersecurity Club, engaging in security CTF competitions and learning ethical hacking techniques
+● Participated in JIMS College Hackathon, developing innovative solutions under time constraints while collaborating in a competitive
+team environment
+Certifications & Achievements
+● Java - ● Generative ● Data ● Agile
+Hacker-Rank AI-Google Visualization Methodologies
+
+
+===== PROJECTS =====
+
+SupportFlow - Customer Support Platform for Startups
+● Building SupportFlow, a customer support platform designed for startups to manage tickets, chats, and client interactions.
+● Developing core modules including agent auto-assignment, real-time chat, analytics and multi-channel support.
+Face-detection system | Link
+● Developed a real-time face detection system using OpenCV and Haar Cascade Classifier for accurate face recognition.
+● Implemented the solution to work efficiently across various lighting conditions and backgrounds using pre-trained models.
+Real-Estate price prediction | Link
+● Built a real estate price predictor using Linear Regression.
+● Cleaned and processed housing data for better model accuracy.
+InsurePro: Dynamic Insurance Premium Calculator | Link
+● Developed a comprehensive insurance premium calculator.
+● Dynamically computes rates based on multiple risk factors.
+Flash-cards | Link
+● Developed a flashcard-based learning app to improve knowledge retention, featuring intuitive creation, organization, and review tools.
+● Engineered efficient data handling using optimized data structures for fast storage and retrieval of flashcards.
+
+
+===== EXPERIENCE =====
+
+No content detected
+
+
+===== INTERNSHIPS =====
+
+National Institute of Technology (NIT), Silchar June 2024 – Aug. 2024
+Research Intern | Link Advisor: Dr. Devendra Singh Gurjar
+● Analyzed collaborative signal processing algorithm improving node positioning accuracy by 5%
+● Implemented multi-device positioning systems outperforming GPS in challenging environments
+● Analyzed signal strength indicators reducing location estimation errors
+
+
+===== EDUCATION =====
+
+SRM University, Sonipat, Haryana Aug. 2022 – June 2026
+B.Tech in Computer Science CGPA - 7.2/10
+

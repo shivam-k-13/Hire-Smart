@@ -1,0 +1,72 @@
+:root{
+
+    --panel-bg:#0e1a33;
+    --border:#2b3d66;
+    
+    --text-main:#e6eeff;
+    
+    }
+    
+    /* ===== RESET ===== */
+    
+    *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    }
+    
+    /* ===== PAGE BACKGROUND ===== */
+    
+    body{
+    
+    min-height:100vh;
+    
+    background:radial-gradient(
+    circle at 20% 20%,
+    #0d1a33 0%,
+    #070b14 70%
+    );
+    
+    color:var(--text-main);
+    
+    font-family:Inter,system-ui,Segoe UI;
+    
+    display:flex;
+    
+    justify-content:center;
+    
+    align-items:flex-start;
+    
+    }
+    
+    /* ROOT WRAPPER */
+    
+    #root{
+    
+    width:100%;
+    
+    display:flex;
+    
+    justify-content:center;
+    
+    }
+    
+    /* TITLE */
+    
+    h1{
+    
+    font-size:38px;
+    
+    margin-top:40px;
+    margin-bottom:30px;
+    
+    background:linear-gradient(90deg,#4f9cff,#ffd54f);
+    
+    
+    -webkit-background-clip:text;
+    
+    color:transparent;
+    
+    text-align:center;
+    
+    }

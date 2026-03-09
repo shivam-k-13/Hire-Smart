@@ -1,0 +1,256 @@
+.dashboard{
+
+    width:100%;
+    
+    max-width:1200px;
+    
+    display:flex;
+    
+    gap:40px;
+    
+    justify-content:center;
+    
+    align-items:flex-start;
+    
+    flex-wrap:wrap;
+    
+    padding:20px;
+    
+    }
+    
+    /* LEFT CARD */
+    
+    .leftPanel{
+    
+    width:420px;
+    
+    background:var(--panel-bg);
+    
+    padding:30px;
+    
+    border-radius:16px;
+    
+    border:1px solid var(--border);
+    
+    box-shadow:0 0 25px rgba(0,0,0,.4);
+    
+    }
+    
+    /* RIGHT CARD */
+    
+    .rightPanel{
+    
+    width:420px;
+    
+    background:var(--panel-bg);
+    
+    padding:30px;
+    
+    border-radius:16px;
+    
+    border:1px solid var(--border);
+    
+    box-shadow:0 0 25px rgba(0,0,0,.4);
+    
+    }
+    
+    /* SECTIONS */
+    
+    h3{
+    
+    margin-top:25px;
+    
+    margin-bottom:10px;
+    
+    color:#dce6ff;
+    
+    }
+    
+    /* DROPDOWN */
+    
+    select{
+    
+    width:100%;
+    
+    padding:10px;
+    
+    margin-top:8px;
+    
+    border-radius:10px;
+    
+    background:#1a2742;
+    
+    border:1px solid #2f4270;
+    
+    color:white;
+    
+    }
+    
+    /* TECH TAGS */
+    
+    .techTags{
+    
+    display:flex;
+    
+    flex-wrap:wrap;
+    
+    gap:10px;
+    
+    margin-top:10px;
+    
+    margin-bottom:10px;
+    
+    }
+    
+    .techTag{
+    
+    background:#1b2846;
+    
+    border:1px solid #2f4270;
+    
+    padding:6px 12px;
+    
+    border-radius:20px;
+    
+    font-size:13px;
+    
+    display:flex;
+    
+    align-items:center;
+    
+    gap:6px;
+    
+    }
+    
+    .techTag span{
+    
+    color:#ff4fa3;
+    
+    cursor:pointer;
+    
+    }
+    
+    /* BUTTON */
+    
+    button{
+    
+    padding:10px 16px;
+    
+    border-radius:10px;
+    
+    border:none;
+    
+    cursor:pointer;
+    
+    margin-top:12px;
+    
+    font-weight:600;
+    
+    background:linear-gradient(135deg,#4f9cff,#ff4fa3);
+    
+    color:white;
+    
+    transition:.2s;
+    
+    }
+    
+    button:hover{
+    
+    transform:scale(1.05);
+    
+    }
+    
+    /* FILE INPUT */
+    
+    input[type="file"]{
+    
+    margin-top:10px;
+    
+    color:#9fb2d8;
+    
+    }
+    
+    /* SCORE */
+    
+    .score{
+    
+    font-size:34px;
+    
+    font-weight:700;
+    
+    color:#ffd54f;
+    
+    margin-bottom:10px;
+    
+    }
+    
+    /* CHART CONTAINER */
+    
+    .chartContainer{
+    
+    width:100%;
+    
+    min-height:320px;
+    
+    margin-top:20px;
+    
+    margin-bottom:20px;
+    
+    }
+    
+    /* SKILLS */
+    
+    ul{
+    
+    padding-left:20px;
+    
+    margin-top:10px;
+    
+    }
+    
+    ul li{
+    
+    margin-bottom:6px;
+    
+    }
+    
+    /* TABLET */
+    
+    @media (max-width:900px){
+    
+    .dashboard{
+    
+    flex-direction:column;
+    
+    align-items:center;
+    
+    }
+    
+    .leftPanel,
+    .rightPanel{
+    
+    width:100%;
+    max-width:420px;
+    
+    }
+    
+    }
+    
+    /* MOBILE */
+    
+    @media (max-width:500px){
+    
+    h1{
+    font-size:28px;
+    }
+    
+    .leftPanel,
+    .rightPanel{
+    padding:20px;
+    }
+    
+    .chartContainer{
+    min-height:260px;
+    }
+    
+    }
