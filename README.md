@@ -124,7 +124,7 @@ pip install -r requirements.txt
 ## 6️⃣ Run Backend Server
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 ```
 
 Backend runs at:
@@ -223,7 +223,7 @@ __pycache__/
 
 # 👨‍💻 Author
 
-Shivam Kumar
+Shivam Khosla
 
 GitHub:
 https://github.com/shivam-k-13
