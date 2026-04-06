@@ -47,6 +47,10 @@ PROJECT_TECH_MAP = {
     "object detection": ["Computer Vision"],
     "fraud detection": ["ML", "Data Science"],
     "spam": ["ML", "NLP"],
+    "regression": ["ML"],
+    "prediction": ["ML"],
+    "classifier": ["ML"],
+    "model": ["ML"],
     "web scraper": ["Python", "Data Mining"],
     "portfolio": ["HTML", "CSS", "JavaScript"],
     "ecommerce": ["React", "NodeJS", "MongoDB"]
@@ -68,5 +72,11 @@ def extract_tech_stack(sections):
 
         if keyword in combined_text:
             tech_set.add(tech)
+
+    
+    for keyword, techs in PROJECT_TECH_MAP.items():
+        if keyword in combined_text:
+            for tech in techs:
+                tech_set.add(tech)
 
     return list(tech_set)   

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { uploadResume } from "../api/api"
 
-export default function ResumeUploader({ setResult }) {
+export default function ResumeUploader({ setResult, setProjects }) {
 
   const [file, setFile] = useState(null)
   const [preview, setPreview] = useState(null)
@@ -9,15 +9,12 @@ export default function ResumeUploader({ setResult }) {
   const handleFileChange = (e) => {
 
     const selected = e.target.files[0]
-  
     if(!selected) return
-  
+
     setFile(selected)
-  
+
     const fileURL = URL.createObjectURL(selected)
-  
     setPreview(fileURL)
-  
   }
 
   const handleUpload = async () => {
@@ -38,13 +35,15 @@ export default function ResumeUploader({ setResult }) {
 
       setResult(res.data)
 
+      // 🔥 IMPORTANT FIX
+      setProjects(res.data.projects || [])
+
     } catch (err) {
 
       console.error(err)
       alert("Error analyzing resume")
 
     }
-
   }
 
   return (
@@ -54,32 +53,24 @@ export default function ResumeUploader({ setResult }) {
       <h3>Upload Resume</h3>
 
       <input type="file" onChange={handleFileChange} />
+
       {preview && (
+        <div className="resumePreview">
 
-  <div className="resumePreview">
+          {file.type === "application/pdf" ? (
+            <iframe
+              src={`${preview}#toolbar=0`}
+              title="Resume Preview"
+              className="pdfPreview"
+            />
+          ) : (
+            <img src={preview} alt="Resume Preview" />
+          )}
 
-    {file.type === "application/pdf" ? (
+          <p>{file.name}</p>
 
-    <iframe
-    src={`${preview}#toolbar=0`}
-    title="Resume Preview"
-    className="pdfPreview"
-    />
-
-    ) : (
-
-      <img
-        src={preview}
-        alt="Resume Preview"
-      />
-
-    )}
-
-    <p>{file.name}</p>
-
-  </div>
-
-)}
+        </div>
+      )}
 
       <br /><br />
 

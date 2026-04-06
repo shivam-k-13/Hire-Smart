@@ -5,11 +5,6 @@
 ● Tools & Libraries: NumPy, Pandas, Scikit-learn, TensorFlow, Matplotlib, Seaborn, OpenCV
 ● Computer Science Fundamentals: Data Structures, Algorithms, OOPS, Computer-networks
 ● Web Development: HTML, CSS, Java-Script, Wordpress, React-native
-Soft Skills
-● Project ● Public ● Teamwork ● Time
-Management Relations Management
-Extracurricular Activities
-● Member of WebBytes Coding Club, collaborating on programming projects and participating in code challenges to enhance technical
 ● Active participant in CyberZee Cybersecurity Club, engaging in security CTF competitions and learning ethical hacking techniques
 ● Participated in JIMS College Hackathon, developing innovative solutions under time constraints while collaborating in a competitive
 team environment
@@ -55,4 +50,20 @@ Research Intern | Link Advisor: Dr. Devendra Singh Gurjar
 
 SRM University, Sonipat, Haryana Aug. 2022 – June 2026
 B.Tech in Computer Science CGPA - 7.2/10
+
+
+===== CERTIFICATIONS =====
+
+No content detected
+
+
+===== EXTRACURRICULAR =====
+
+● Member of WebBytes Coding Club, collaborating on programming projects and participating in code challenges to enhance technical
+
+
+===== SOFT_SKILLS =====
+
+● Project ● Public ● Teamwork ● Time
+Management Relations Management
 
